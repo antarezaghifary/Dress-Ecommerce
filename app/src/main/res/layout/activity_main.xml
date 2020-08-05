@@ -1,0 +1,628 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:padding="20dp"
+        android:background="#FCB9C4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:layout_width="36dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/menu" />
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        tools:ignore="ContentDescription,InefficientWeight" />
+
+                    <Button
+                        android:background="@drawable/tas"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"/>
+                </LinearLayout>
+
+            </androidx.appcompat.widget.Toolbar>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            tools:ignore="UselessLeaf" >
+
+            <TextView
+                android:id="@+id/textView"
+                android:textColor="#000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Find your Favorite \nItems"
+                android:textSize="25sp"/>
+
+        </RelativeLayout>
+
+
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+
+            <androidx.appcompat.widget.SearchView
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:queryHint="hint"
+                android:iconifiedByDefault="false"
+                android:layout_margin="0dp"
+                app:queryHint="Search drinks..."
+                app:defaultQueryHint="Search drinks..."
+                android:autofillHints="Search drinks..."
+                android:background="#F6F6F6"
+                android:elevation="1dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"/>
+
+                <Button
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/setting"
+                    android:layout_weight="1"
+                    android:layout_width="105dp"
+                    android:layout_height="50dp"/>
+            </LinearLayout>
+
+    </LinearLayout>
+
+
+        <LinearLayout
+            android:padding="20dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            tools:ignore="DisableBaselineAlignment">
+
+            <LinearLayout
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:ignore="KeyboardInaccessibleWidget,UnusedAttribute">
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:background="@drawable/pilih1"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    tools:ignore="NestedWeights">
+
+                    <ImageView
+                        android:layout_margin="20dp"
+                        android:src="@drawable/kalung"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        tools:ignore="ContentDescription" />
+                </LinearLayout>
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:textColor="#060608"
+                    android:layout_weight="1"
+                    android:text="Watche"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    tools:ignore="HardcodedText" />
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="15dp"
+                android:layout_height="match_parent"
+                tools:ignore="UselessLeaf" />
+
+            <LinearLayout
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:ignore="KeyboardInaccessibleWidget,UnusedAttribute">
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:background="@drawable/pilih1"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    tools:ignore="NestedWeights">
+
+                    <ImageView
+                        android:layout_margin="20dp"
+                        android:src="@drawable/kalung"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        tools:ignore="ContentDescription" />
+                </LinearLayout>
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:textColor="#060608"
+                    android:layout_weight="1"
+                    android:text="Jewellery"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    tools:ignore="HardcodedText" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="15dp"
+                android:layout_height="match_parent"
+                tools:ignore="UselessLeaf" />
+            <LinearLayout
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:ignore="KeyboardInaccessibleWidget,UnusedAttribute">
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:background="@drawable/pilih2"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    tools:ignore="NestedWeights">
+
+                    <ImageView
+                        android:layout_margin="20dp"
+                        android:src="@drawable/baju"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        tools:ignore="ContentDescription" />
+                </LinearLayout>
+                <TextView
+                    android:textStyle="bold"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#060608"
+                    android:layout_weight="1"
+                    android:text="Dress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    tools:ignore="HardcodedText" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="15dp"
+                android:layout_height="match_parent"
+                tools:ignore="UselessLeaf" />
+            <LinearLayout
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:ignore="KeyboardInaccessibleWidget,UnusedAttribute">
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:background="@drawable/pilih1"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    tools:ignore="NestedWeights">
+
+                    <ImageView
+                        android:layout_margin="20dp"
+                        android:src="@drawable/kosmetik"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        tools:ignore="ContentDescription" />
+                </LinearLayout>
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:textColor="#060608"
+                    android:layout_weight="1"
+                    android:text="Cosmetics"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    tools:ignore="HardcodedText" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="DisableBaselineAlignment">
+
+            <LinearLayout
+                android:id="@+id/rush"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="KeyboardInaccessibleWidget,UnusedAttribute">
+
+                <LinearLayout
+                    android:padding="1dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    tools:ignore="NestedWeights">
+
+                    <ImageView
+                        android:id="@+id/image1"
+                        android:layout_margin="0dp"
+                        android:background="@drawable/yellow"
+                        android:layout_width="match_parent"
+                        android:layout_height="140dp"
+                        tools:ignore="ContentDescription" />
+
+                    <LinearLayout
+                        android:layout_marginTop="1dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_weight="1"
+                                android:textStyle="bold"
+                                android:textColor="#121212"
+                                android:text="T-Shirt"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:layout_weight="1"
+                                android:textStyle="bold"
+                                android:textColor="#4B9CAF"
+                                android:text="Rp. 25.000"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                tools:ignore="HardcodedText" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:layout_width="90dp"
+                            android:layout_height="40dp">
+
+                            <ImageView
+                                android:layout_gravity="center"
+                                android:src="@drawable/love"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                tools:ignore="ContentDescription" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="15dp"
+                android:layout_height="match_parent"
+                tools:ignore="UselessLeaf" />
+            <LinearLayout
+                android:id="@+id/relax"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="KeyboardInaccessibleWidget,UnusedAttribute">
+
+                <LinearLayout
+                    android:layout_margin="1dp"
+                    android:padding="0dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    tools:ignore="NestedWeights">
+
+                    <ImageView
+                        android:id="@+id/image2"
+                        android:layout_margin="0dp"
+                        android:background="@drawable/celana"
+                        android:layout_width="match_parent"
+                        android:layout_height="140dp"
+                        tools:ignore="ContentDescription" />
+
+                    <LinearLayout
+                        android:layout_marginTop="1dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_weight="1"
+                                android:textStyle="bold"
+                                android:textColor="#121212"
+                                android:text="Jeans Pent"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:layout_weight="1"
+                                android:textStyle="bold"
+                                android:textColor="#4B9CAF"
+                                android:text="Rp. 25.000"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                tools:ignore="HardcodedText" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:layout_width="90dp"
+                            android:layout_height="40dp">
+
+                            <ImageView
+                                android:layout_gravity="center"
+                                android:src="@drawable/love"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                tools:ignore="ContentDescription" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textSize="18sp"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textColor="#121212"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Recommended!"
+                tools:ignore="HardcodedText" />
+            <TextView
+                android:textSize="18sp"
+                android:textColor="#000"
+                android:clickable="true"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="See All"
+                tools:ignore="HardcodedText,KeyboardInaccessibleWidget,RtlHardcoded" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="DisableBaselineAlignment">
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="KeyboardInaccessibleWidget,UnusedAttribute">
+
+                <LinearLayout
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:layout_weight="1"
+                    android:padding="1dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    tools:ignore="NestedWeights">
+
+                    <ImageView
+                        android:id="@+id/image3"
+                        android:layout_weight="1"
+                        android:layout_margin="0dp"
+                        android:background="@drawable/green"
+                        android:scaleType="centerCrop"
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        tools:ignore="ContentDescription" />
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_marginTop="1dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_marginLeft="30dp"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_weight="1"
+                                android:textStyle="bold"
+                                android:textColor="#121212"
+                                android:text="green tops"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:layout_weight="1"
+                                android:textStyle="bold"
+                                android:textColor="#4B9CAF"
+                                android:text="Rp. 25.000"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                tools:ignore="HardcodedText" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:layout_width="90dp"
+                            android:layout_height="40dp">
+
+                            <ImageView
+                                android:layout_gravity="center"
+                                android:src="@drawable/add"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                tools:ignore="ContentDescription" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    tools:ignore="UselessLeaf" />
+
+                <LinearLayout
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:layout_weight="1"
+                    android:padding="1dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    tools:ignore="NestedWeights">
+
+                    <ImageView
+                        android:id="@+id/image4"
+                        android:layout_weight="1"
+                        android:layout_margin="0dp"
+                        android:background="@drawable/abuabu"
+                        android:scaleType="centerCrop"
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        tools:ignore="ContentDescription" />
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_marginTop="1dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_marginLeft="30dp"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_weight="1"
+                                android:textStyle="bold"
+                                android:textColor="#121212"
+                                android:text="Black Progs"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:layout_weight="1"
+                                android:textStyle="bold"
+                                android:textColor="#4B9CAF"
+                                android:text="Rp. 25.000"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                tools:ignore="HardcodedText" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:layout_width="90dp"
+                            android:layout_height="40dp">
+
+                            <ImageView
+                                android:layout_gravity="center"
+                                android:src="@drawable/add"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                tools:ignore="ContentDescription" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
